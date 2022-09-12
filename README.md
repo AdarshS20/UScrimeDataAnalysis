@@ -1,2 +1,2 @@
 # UScrimeDataAnalysis
-Analysis of UScrime dataset in MASS package
+Analysis of UScrime dataset Using MASS package
