@@ -126,7 +126,7 @@ UScrime.dt.mod5<-lm(crime_rate~gdp+state_pop,data = UScrime.data_clean)
 summary(UScrime.dt.mod5)
 anova(UScrime.dt.mod5)
 
-#model 5 crime rate vs prob_imp+state_pop
+#model 6 crime rate vs prob_imp+state_pop
 UScrime.dt.mod6<-lm(crime_rate~prob_imp+state_pop,data = UScrime.data_clean)
 summary(UScrime.dt.mod6)
 anova(UScrime.dt.mod6)
@@ -170,7 +170,7 @@ model.names<-c("1,2,3","1,2,4","1,3,4","2,3,4")
 aictab(model.set,modnames = model.names)
 
 #Anova on all 4 parameters
-# Model 6 - crime rate vs Police expenditure + Gdp+probality of imprisonment + State population
+# Model 11 - crime rate vs Police expenditure + Gdp+probality of imprisonment + State population
 UScrime.dt.mod11<-lm(crime_rate~pol_exp+gdp+prob_imp+state_pop,data = UScrime.data_clean)
 summary(UScrime.dt.mod11)
 anova(UScrime.dt.mod11)
